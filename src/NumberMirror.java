@@ -1,17 +1,26 @@
 public class NumberMirror {
-    private Integer number;
-    private Integer reversedNumber = 0;
-    private Integer temp = 0;
+    Integer number;
 
     public NumberMirror(Integer number) {
+        this.number = number;
     }
 
-    public void getMirrorNumber() {
-        while (number > 0) {
-            temp = number % 10;
-            reversedNumber = reversedNumber * 10 + temp;
-            number = number / 10;
+    public NumberMirror() {
+
+    }
+
+    public Integer getMirrorNumber() {
+        Integer reversedNumber = 0;
+        Integer temp = 0;
+        if (number == 9) {
+            number = 0;
+        } else {
+            while (number > 0) {
+                temp = number % 10;
+                reversedNumber = reversedNumber * 10 + temp;
+                number = number / 10;
+            }
         }
-        System.out.println("Reversed Number is: " + reversedNumber);
+        return reversedNumber;
     }
 }
