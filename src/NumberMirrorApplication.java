@@ -20,7 +20,7 @@
 //        > Maybe some Java traits can help you solve the problem easily, if you are creative enough to combine them.
 //        > Keep it simple stupid. Don’t overdo things, just stick to what the exercise asks for.
 
-        import java.util.Scanner;
+import java.util.Scanner;
 public class NumberMirrorApplication {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
